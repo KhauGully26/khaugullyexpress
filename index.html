@@ -3,64 +3,232 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Khau Gully Express | Indian Street Food Trailer in DFW</title>
-  <meta name="description" content="Khau Gully Express serves Indian street food on wheels in Carrollton and DFW. Catering available for private events, offices, parties, and festivals." />
+  <meta name="theme-color" content="#b92b1f" />
+  <title>Khau Gully Express | Indian Street Food in Irving, TX</title>
+  <meta name="description" content="Khau Gully Express serves bold vegetarian Indian street food, chaat, vada pav, Frankie rolls, chai and more in Irving, Texas." />
   <link rel="icon" href="Khau Gully Final Logo-01.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=League+Spartan:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
   <header class="site-header">
-    <a class="brand" href="#home"><img src="Khau Gully Final Logo-01.jpg" alt="Khau Gully Express logo"><span>Khau Gully Express</span></a>
-    <nav>
-      <a href="#menu">Menu</a><a href="#locations">Find Us</a><a href="#catering">Catering</a><a href="#contact">Contact</a>
+    <a class="brand" href="#home" aria-label="Khau Gully Express home">
+      <img src="Khau Gully Final Logo-01.jpg" alt="Khau Gully Express logo" />
+      <span>Khau Gully Express</span>
+    </a>
+
+    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="primary-nav" aria-label="Primary navigation">
+      <a href="#menu">Menu</a>
+      <a href="#location">Find Us</a>
+      <a href="#catering">Catering</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main id="home">
-    <section class="hero">
-      <div class="hero-text">
-        <p class="eyebrow">STREET BITES, MODERN VIBEZZ</p>
-        <h1>Bold flavors. Fast service. Fresh Indian comfort food.</h1>
-        <p>Serving DFW area with chaat, sandwiches, rolls, drinks, and catering for events.</p>
-        <div class="actions"><a class="button" href="#menu">View Menu</a><a class="button secondary" href="tel:9405101158">Call 940-510-1158</a></div>
+  <main id="main-content">
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Indian street food • Irving, Texas</p>
+        <h1>Street Bites,<br><span>Modern Vibess</span></h1>
+        <p class="hero-intro">Bold flavors from the streets of India—served fresh, fast and full of personality.</p>
+        <div class="actions">
+          <a class="button" href="#menu">Explore the Menu</a>
+          <a class="button button-dark" href="#location">Find Us</a>
+        </div>
+        <div class="hero-tags" aria-label="Highlights">
+          <span>Vegetarian</span>
+          <span>Freshly Made</span>
+          <span>Big Flavors</span>
+        </div>
       </div>
-      <div class="hero-card"><img src="Khau Gully Final Logo-01.jpg" alt="Khau Gully Express"></div>
-    </section>
 
-    <section class="section" id="menu">
-      <p class="eyebrow">Menu Preview</p>
-      <h2>Street food favorites</h2>
-      <div class="grid menu-grid">
-        <article><h3>Chaat</h3><p>Pani Puri, Sev Puri, Dahi Puri, Bhel, Papdi Chaat</p></article>
-        <article><h3>Sandwiches</h3><p>Mumbai Grill Sandwich, Cheese Chutney Sandwich, Paneer Sandwich</p></article>
-        <article><h3>Rolls</h3><p>Paneer Kathi Roll, Veg Frankie, Spicy Street Wraps</p></article>
-        <article><h3>Drinks</h3><p>Masala Chai, Mango Lassi, Nimbu Pani, Cold Beverages</p></article>
+      <div class="hero-art" aria-label="Khau Gully Express brand artwork">
+        <div class="sunburst"></div>
+        <div class="logo-frame">
+          <img src="Khau Gully Final Logo-01.jpg" alt="Khau Gully Express" />
+        </div>
+        <span class="sticker sticker-one">CHAAT</span>
+        <span class="sticker sticker-two">CHAI</span>
+        <span class="sticker sticker-three">VADA PAV</span>
       </div>
-      <p class="note">Full menu and prices coming soon.</p>
     </section>
 
-    <section class="section split" id="locations">
-      <div><p class="eyebrow">Find Us</p><h2>Coming soon to DFW</h2><p>Follow us for weekly locations, pop-ups, festivals, and opening updates.</p></div>
-      <div class="info-box"><strong>Current Status</strong><br>Trailer launch in progress. Location schedule will be posted here soon.</div>
+    <section class="marquee" aria-label="Menu highlights">
+      <div class="marquee-track">
+        <span>Vada Pav</span><i>✦</i><span>Chaat</span><i>✦</i><span>Frankie</span><i>✦</i><span>Pani Puri</span><i>✦</i><span>Chai</span><i>✦</i><span>Buttery Bites</span><i>✦</i>
+        <span aria-hidden="true">Vada Pav</span><i aria-hidden="true">✦</i><span aria-hidden="true">Chaat</span><i aria-hidden="true">✦</i><span aria-hidden="true">Frankie</span><i aria-hidden="true">✦</i><span aria-hidden="true">Pani Puri</span><i aria-hidden="true">✦</i><span aria-hidden="true">Chai</span><i aria-hidden="true">✦</i><span aria-hidden="true">Buttery Bites</span><i aria-hidden="true">✦</i>
+      </div>
     </section>
 
-    <section class="section split" id="catering">
-      <div><p class="eyebrow">Catering</p><h2>Book us for your next event</h2><p>We can serve office lunches, birthday parties, weddings, community events, festivals, and private gatherings.</p></div>
-      <a class="big-link" href="mailto:manveeventures@gmail.com?subject=Catering%20Inquiry%20-%20Khau%20Gully%20Express">Request Catering Quote</a>
+    <section class="section menu-section" id="menu">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">The full lineup</p>
+          <h2>Pick your craving.</h2>
+        </div>
+        <p>Classic street-food favorites, playful mashups and buttery comfort bites—all in one gully.</p>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-card featured">
+          <span class="category-number">01</span>
+          <h3>Vada Pav</h3>
+          <ul>
+            <li><span>Bombay Vada Pav</span></li>
+            <li><span>Amdavadi Butter Vada Pav</span></li>
+          </ul>
+        </article>
+
+        <article class="menu-card">
+          <span class="category-number">02</span>
+          <h3>Sandwiches</h3>
+          <ul>
+            <li><span>Bombay Sandwich Toastie</span></li>
+            <li><span>Amdavadi Ghughra Sandwich</span></li>
+            <li><span>Vegetable Sandwich</span></li>
+            <li><span>Bread Slices</span><small>Butter, jam or chutney</small></li>
+          </ul>
+        </article>
+
+        <article class="menu-card">
+          <span class="category-number">03</span>
+          <h3>Frankie</h3>
+          <ul>
+            <li><span>Chatpata Paneer Frankie</span></li>
+            <li><span>Bombay Masala Frankie</span></li>
+          </ul>
+        </article>
+
+        <article class="menu-card wide">
+          <span class="category-number">04</span>
+          <h3>Buttery Bites</h3>
+          <ul class="two-column-list">
+            <li><span>Makai Masti</span><small>Corn sautéed with spices</small></li>
+            <li><span>Desi Tadka Pasta</span></li>
+            <li><span>Butter Tadka Maggi</span></li>
+            <li><span>Butter Tawa Pulav</span></li>
+            <li><span>Bun Maska</span></li>
+          </ul>
+        </article>
+
+        <article class="menu-card wide chaat-card">
+          <span class="category-number">05</span>
+          <h3>Chaat Corner</h3>
+          <ul class="two-column-list">
+            <li><span>Papdi Chaat</span></li>
+            <li><span>Sev Puri</span></li>
+            <li><span>Bhel</span></li>
+            <li><span>Bombay Sukha Bhel</span></li>
+            <li><span>Dahi Puri</span></li>
+          </ul>
+        </article>
+
+        <article class="menu-card pani-card">
+          <span class="category-number">06</span>
+          <h3>Pani Puri</h3>
+          <p class="card-label">Pick your flavor</p>
+          <div class="flavor-pills">
+            <span>Phudina</span><span>Kaccha Aam</span><span>Hajma Hajam</span><span>Garlic</span>
+          </div>
+          <div class="serving-options">
+            <strong>8-piece plate</strong>
+            <span>or</span>
+            <strong>All you can eat</strong>
+          </div>
+        </article>
+
+        <article class="menu-card diy-card">
+          <span class="category-number">07</span>
+          <h3>DIY Chaat Bar</h3>
+          <p>Pick your base, chutneys and toppings.</p>
+        </article>
+
+        <article class="menu-card walking-card">
+          <span class="category-number">08</span>
+          <h3>Desi Walking Taco</h3>
+          <p>Indian chips with your choice of veggies.</p>
+          <div class="flavor-pills compact">
+            <span>Truck Chips</span><span>BYO Chips</span>
+          </div>
+        </article>
+
+        <article class="menu-card dessert-card">
+          <span class="category-number">09</span>
+          <h3>Dessert</h3>
+          <ul><li><span>Malai Tres Leches</span></li></ul>
+        </article>
+
+        <article class="menu-card beverages-card wide">
+          <span class="category-number">10</span>
+          <h3>Beverages</h3>
+          <ul class="two-column-list">
+            <li><span>Karak Masala Chai</span></li>
+            <li><span>Phudina Chai</span></li>
+            <li><span>Cold Coffee</span><small>Add Coffee Vita (Bournvita) or ice cream</small></li>
+            <li><span>Masala Soda</span><small>Jaljeera with your choice of soft drink</small></li>
+          </ul>
+        </article>
+      </div>
+      <p class="menu-note">Menu availability may vary. Ask us about today's specials.</p>
     </section>
 
-    <section class="section" id="contact">
-      <p class="eyebrow">Contact</p>
-      <h2>Get in touch</h2>
-      <div class="contact-cards">
-        <a href="tel:9405101158">Phone: 940-510-1158</a>
-        <a href="mailto:manveeventures@gmail.com">Email: manveeventures@gmail.com</a>
-        <span>Instagram: coming soon</span>
+    <section class="section location-section" id="location">
+      <div class="location-copy">
+        <p class="eyebrow">Find us in Irving</p>
+        <h2>Your next street-food stop.</h2>
+        <address>8205 Esters Boulevard<br>Irving, TX 75063</address>
+        <div class="actions">
+          <a class="button" href="https://www.google.com/maps/search/?api=1&query=8205+Esters+Boulevard%2C+Irving%2C+TX+75063" target="_blank" rel="noopener">Get Directions</a>
+          <a class="text-link" href="tel:9405101158">940-510-1158</a>
+        </div>
+      </div>
+      <a class="map-card" href="https://www.google.com/maps/search/?api=1&query=8205+Esters+Boulevard%2C+Irving%2C+TX+75063" target="_blank" rel="noopener" aria-label="Open Khau Gully Express location in Google Maps">
+        <div class="map-grid"></div>
+        <span class="map-pin">KG</span>
+        <div class="map-label"><strong>Khau Gully Express</strong><span>8205 Esters Blvd.</span></div>
+      </a>
+    </section>
+
+    <section class="section catering-section" id="catering">
+      <div>
+        <p class="eyebrow">Catering</p>
+        <h2>Bring the gully to your gathering.</h2>
+        <p>Planning an event? Reach out for catering availability and menu options.</p>
+      </div>
+      <a class="button button-light" href="mailto:manveeventures@gmail.com?subject=Catering%20Inquiry%20-%20Khau%20Gully%20Express">Request Catering</a>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Say hello</p>
+          <h2>Hungry yet?</h2>
+        </div>
+        <p>Call or email us for menu questions, catering and location updates.</p>
+      </div>
+      <div class="contact-grid">
+        <a href="tel:9405101158"><small>Call us</small><strong>940-510-1158</strong><span>→</span></a>
+        <a href="mailto:manveeventures@gmail.com"><small>Email us</small><strong>manveeventures@gmail.com</strong><span>→</span></a>
       </div>
     </section>
   </main>
 
-  <footer>© <span id="year"></span> Khau Gully Express. All rights reserved.</footer>
+  <footer>
+    <div class="footer-brand">
+      <img src="Khau Gully Final Logo-01.jpg" alt="" />
+      <div><strong>Khau Gully Express</strong><span>Street Bites, Modern Vibess</span></div>
+    </div>
+    <p>© <span id="year"></span> Khau Gully Express. All rights reserved.</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
