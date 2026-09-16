@@ -1,123 +1,183 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#D62828" />
-  <title>Khau Gully Express | Indian Street Food in Irving, TX</title>
-  <meta name="description" content="Khau Gully Express serves bold vegetarian Indian street food, chaat, vada pav, Frankie rolls, chai and more in Irving, Texas." />
-  <link rel="icon" href="Khau Gully Final Logo-01.jpg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Khau Gully Express — Street bites, modern vibes.</title>
+<meta name="description" content="100% vegetarian Indian street food truck in Irving, TX. Vada pav, chaat, frankie, pani puri, and more.">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="Khau Gully Express home">
-      <img src="Khau Gully Final Logo-01.jpg" alt="Khau Gully Express logo" />
-      <span>Khau Gully Express</span>
+<!-- NAV -->
+<header class="nav">
+  <div class="nav-row">
+    <a href="#" class="logo-link" aria-label="Khau Gully Express home">
+      <span class="logo-chip logo-chip--nav"><img src="images/logo.png" alt="Khau Gully Express" class="logo-img logo-img--nav"></span>
     </a>
-
-    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
-      <span></span><span></span><span></span>
-    </button>
-
-    <nav id="primary-nav" aria-label="Primary navigation">
-      <a href="#menu">Menu</a>
-      <a href="#location">Find Us</a>
-      <a href="#contact">Contact</a>
+    <nav class="nav-links hide-mobile" aria-label="Primary">
+      <a class="navlink" href="#favorites">Favorites</a>
+      <a class="navlink" href="#menu">Menu</a>
+      <a class="navlink" href="#truck">Our Truck</a>
+      <a class="navlink" href="#location">Find Us</a>
+      <a class="navlink" href="#contact">Contact</a>
     </nav>
-  </header>
-
+  </div>
   <div class="bunting" id="bunting" aria-hidden="true"></div>
+</header>
 
-  <main id="main-content">
-    <section class="hero" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow">Vegetarian Indian street food • Irving, Texas</p>
-        <h1>Street Bites,<br><span>Modern Vibes</span></h1>
-        <p class="hero-sub">100% vegetarian. Freshly prepared. Bold Indian street-food flavors, from Bombay vada pav to a build-your-own chaat bar.</p>
-        <div class="actions">
-          <a class="button" href="#menu">View Full Menu</a>
-          <a class="button button-secondary" href="#location">Get Directions</a>
-        </div>
-      </div>
-
-      <div class="hero-panel">
-        <p>Now serving in Irving</p>
-        <strong>8205 Esters Boulevard</strong>
-        <span>Irving, TX 75063</span>
-        <a href="tel:9405101158">940-510-1158</a>
-      </div>
-    </section>
-
-    <div class="scallop" aria-hidden="true"></div>
-
-    <section class="section menu-section" id="menu">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">The full lineup</p>
-          <h2>Explore Our Menu</h2>
-        </div>
-        <p>Ten stalls down the gully. Pick one to see what's cooking.</p>
-      </div>
-
-      <div class="menu-explorer">
-        <div class="menu-nav" id="menuNav"></div>
-        <div class="menu-detail">
-          <div class="menu-detail-header" id="menuHeader"></div>
-          <div class="menu-detail-body" id="menuBody"></div>
-        </div>
-      </div>
-
-      <p class="menu-note">Menu availability may vary. Ask us about today's specials.</p>
-    </section>
-
-    <div class="scallop scallop-alt" aria-hidden="true"></div>
-
-    <section class="section location-section" id="location">
-      <div class="location-copy">
-        <p class="eyebrow">Find us in Irving</p>
-        <h2>Your next street-food stop.</h2>
-        <address>8205 Esters Boulevard<br>Irving, TX 75063</address>
-        <div class="actions">
-          <a class="button" href="https://www.google.com/maps/search/?api=1&query=8205+Esters+Boulevard%2C+Irving%2C+TX+75063" target="_blank" rel="noopener">Get Directions</a>
-          <a class="text-link" href="tel:9405101158">940-510-1158</a>
-        </div>
-      </div>
-      <a class="map-card" href="https://www.google.com/maps/search/?api=1&query=8205+Esters+Boulevard%2C+Irving%2C+TX+75063" target="_blank" rel="noopener" aria-label="Open Khau Gully Express location in Google Maps">
-        <div class="map-grid"></div>
-        <span class="map-pin">KG</span>
-        <div class="map-label"><strong>Khau Gully Express</strong><span>8205 Esters Blvd.</span></div>
-      </a>
-    </section>
-
-    <section class="section contact-section" id="contact">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Say hello</p>
-          <h2>Hungry yet?</h2>
-        </div>
-        <p>Call or email us for menu questions and location updates.</p>
-      </div>
-      <div class="contact-grid">
-        <a href="tel:9405101158"><small>Call us</small><strong>940-510-1158</strong><span>→</span></a>
-        <a href="https://khaugullyexpress.com"><small>Email us</small><strong>khaugullyexpress.com</strong><span>→</span></a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-brand">
-      <img src="Khau Gully Final Logo-01.jpg" alt="" />
-      <div><strong>Khau Gully Express</strong><span>Street Bites, Modern Vibes</span></div>
+<!-- HERO -->
+<section class="hero-bg">
+  <div class="hero-inner">
+    <span class="logo-chip logo-chip--hero">
+      <img src="images/logo.png" alt="Khau Gully Express" class="logo-img logo-img--hero">
+    </span>
+    <p class="eyebrow">Vegetarian Indian street food, Irving TX</p>
+    <h1 class="hero-title">Street bites,<br><span class="accent-turmeric">modern vibes.</span></h1>
+    <p class="hero-sub">100% vegetarian. Freshly prepared. Bold Indian street-food flavors, from Bombay vada pav to a build-your-own chaat bar.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-yellow" href="#menu">View full menu</a>
+      <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&query=8205+Esters+Boulevard%2C+Irving%2C+TX+75063">Get directions</a>
     </div>
-    <p>© <span id="year"></span> Khau Gully Express. All rights reserved.</p>
-  </footer>
+    <div class="stub">
+      <span class="stub-title">Now serving in Irving</span>
+      <span class="stub-line">8205 Esters Boulevard, Irving, TX 75063</span>
+      <a href="tel:9405101158" class="stub-phone">940-510-1158</a>
+    </div>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track" id="marqueeTrack"></div>
+</div>
+
+<div class="scallop scallop-turmeric"></div>
+
+<!-- FAN FAVORITES -->
+<section id="favorites" class="section">
+  <div class="section-head">
+    <h2>Fan favorites</h2>
+    <p>Straight from our gully to your plate — the orders people come back for.</p>
+  </div>
+  <div class="fav-grid">
+    <a href="#menu" class="fav-card">
+      <img src="images/vadapav.jpg" alt="Bombay Vada Pav" loading="lazy">
+      <div class="fav-card-body">
+        <div class="fav-card-title">Vada Pav</div>
+        <div class="fav-card-tag">Mumbai's favorite spiced potato slider</div>
+      </div>
+    </a>
+    <a href="#menu" class="fav-card">
+      <img src="images/sandwich.jpg" alt="Bombay Sandwich Toastie" loading="lazy">
+      <div class="fav-card-body">
+        <div class="fav-card-title">Sandwich Toastie</div>
+        <div class="fav-card-tag">Grilled, stacked and loaded</div>
+      </div>
+    </a>
+    <a href="#menu" class="fav-card">
+      <img src="images/chaat.jpg" alt="Papdi Chaat" loading="lazy">
+      <div class="fav-card-body">
+        <div class="fav-card-title">Papdi Chaat</div>
+        <div class="fav-card-tag">Crunchy, tangy, topped with sev</div>
+      </div>
+    </a>
+    <a href="#menu" class="fav-card">
+      <img src="images/chai.jpg" alt="Karak Masala Chai being poured" loading="lazy">
+      <div class="fav-card-body">
+        <div class="fav-card-title">Masala Chai</div>
+        <div class="fav-card-tag">Hand-poured, hot and spiced</div>
+      </div>
+    </a>
+    <a href="#menu" class="fav-card">
+      <img src="images/butter.jpg" alt="Butter for Buttery Bites" loading="lazy">
+      <div class="fav-card-body">
+        <div class="fav-card-title">Buttery Bites</div>
+        <div class="fav-card-tag">Corn, pasta and pulav, extra desi</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- FULL MENU -->
+<section id="menu" class="section">
+  <div class="section-head">
+    <h2>The full menu</h2>
+    <p>Ten stalls down the gully. Pick one to see what's cooking.</p>
+  </div>
+
+  <div class="menu-explorer">
+    <div class="menu-nav" id="menuNav" role="tablist" aria-label="Menu categories"></div>
+    <div class="menu-detail">
+      <div class="menu-detail-header" id="menuHeader"></div>
+      <div class="menu-detail-body" id="menuBody"></div>
+    </div>
+  </div>
+
+  <p class="menu-footnote">Menu availability may vary. Ask us about today's specials.</p>
+</section>
+
+<div class="scallop scallop-chutney"></div>
+
+<!-- OUR TRUCK -->
+<section id="truck" class="section">
+  <div class="split truck-split">
+    <div class="truck-photo-wrap">
+      <img src="images/truck.jpg" alt="The Khau Gully Express food truck" class="truck-photo" loading="lazy">
+    </div>
+    <div class="truck-text">
+      <h2>From the gully to your curb</h2>
+      <p>Khau Gully Express brings the flavor of Mumbai and Ahmedabad's street corners to Irving, Texas — 100% vegetarian, freshly prepared, one stall at a time. Find the truck, follow the smell of chaat masala.</p>
+      <div class="pill-row">
+        <span class="pill">100% Vegetarian</span>
+        <span class="pill">Freshly Prepared</span>
+        <span class="pill">Irving, TX</span>
+      </div>
+      <div class="social-row">
+        <a class="social-ic" href="https://instagram.com/khaugullyexpress" aria-label="Khau Gully Express on Instagram" target="_blank" rel="noopener">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"></circle></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section id="location" class="location">
+  <div class="split location-split">
+    <div>
+      <h2>Your next street-food stop</h2>
+      <p class="location-address">8205 Esters Boulevard<br>Irving, TX 75063</p>
+    </div>
+    <div class="location-ctas">
+      <a class="btn btn-yellow" href="https://www.google.com/maps/search/?api=1&query=8205+Esters+Boulevard%2C+Irving%2C+TX+75063">Get directions</a>
+      <a class="btn btn-line-dark" href="tel:9405101158">940-510-1158</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="contact-inner">
+    <h2>Hungry yet?</h2>
+    <p class="contact-lead">Call or email us for menu questions and location updates.</p>
+    <div class="contact-row"><a href="tel:9405101158">940-510-1158</a><span>Call us</span></div>
+    <div class="contact-row"><a href="mailto:info@khaugullyexpress.com">info@khaugullyexpress.com</a><span>Email us</span></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-left">
+    <span class="logo-chip logo-chip--footer"><img src="images/logo.png" alt="Khau Gully Express" class="logo-img logo-img--footer"></span>
+    <span class="footer-tag">Street bites, modern vibes.</span>
+  </div>
+  <span class="footer-copy">© <span id="year"></span> Khau Gully Express. All rights reserved.</span>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
