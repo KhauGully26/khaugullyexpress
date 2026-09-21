@@ -4,16 +4,53 @@
 const COLORS = ['#D62828', '#FFC300', '#2E8B57', '#0E7C7B'];
 
 const CATEGORIES = [
-  { name: 'Vada Pav', dishes: [{ name: 'Bombay Vada Pav' }, { name: 'Amdavadi Butter Vada Pav' }] },
-  { name: 'Sandwiches', dishes: [{ name: 'Bombay Sandwich Toastie' }, { name: 'Amdavadi Ghughra Sandwich' }, { name: 'Vegetable Sandwich' }, { name: 'Bread Slices', note: 'Butter, jam or chutney' }] },
-  { name: 'Frankie', dishes: [{ name: 'Chatpata Paneer Frankie' }, { name: 'Bombay Masala Frankie' }] },
-  { name: 'Buttery Bites', dishes: [{ name: 'Makai Masti', note: 'Corn sautéed with spices' }, { name: 'Desi Tadka Pasta' }, { name: 'Butter Tadka Maggi' }, { name: 'Butter Tawa Pulav' }, { name: 'Bun Maska' }] },
-  { name: 'Chaat Corner', dishes: [{ name: 'Papdi Chaat' }, { name: 'Sev Puri' }, { name: 'Bhel' }, { name: 'Bombay Sukha Bhel' }, { name: 'Dahi Puri' }] },
-  { name: 'Pani Puri', dishes: [{ name: 'Pick your flavor', note: '8-piece plate or all-you-can-eat' }], pills: ['Phudina', 'Kaccha Aam', 'Hajma Hajam', 'Garlic'] },
-  { name: 'DIY Chaat Bar', dishes: [{ name: 'Pick your base, chutneys and toppings.' }] },
-  { name: 'Desi Walking Taco', dishes: [{ name: 'Indian chips with your choice of veggies' }], pills: ['Truck Chips', 'BYO Chips'] },
-  { name: 'Dessert', dishes: [{ name: 'Malai Tres Leches' }] },
-  { name: 'Beverages', dishes: [{ name: 'Karak Masala Chai' }, { name: 'Phudina Chai' }, { name: 'Cold Coffee', note: 'Add Coffee Vita (Bournvita) or ice cream' }, { name: 'Masala Soda', note: 'Jaljeera with your choice of soft drink' }] }
+  { name: 'Vada Pav', dishes: [
+    { name: 'Bombay OG Vadapav', price: '$4.99' },
+    { name: 'Amdavadi Butter Vadapav', price: '$5.99' }
+  ] },
+  { name: 'Sandwiches', dishes: [
+    { name: 'Bombay Sandwich Toastie', price: '$10.99' },
+    { name: 'Amdavadi Gughra Sandwich', price: '$11.99' },
+    { name: 'Vegetable Sandwich', price: '$8.99' },
+    { name: 'Bread Slices', note: 'Butter, jam & chutney', price: '$3.99' }
+  ] },
+  { name: 'Frankie', dishes: [
+    { name: 'Chatpata Paneer Frankie', price: '$11.99' },
+    { name: 'Bombay Masala Frankie', price: '$10.99' }
+  ] },
+  { name: 'Buttery Bites', dishes: [
+    { name: 'Makai Masti', note: 'Corn sautéed with spices', price: '$4.99' },
+    { name: 'Desi Tadka Pasta', price: '$8.99' },
+    { name: 'Butter Tadka Maggi', price: '$5.99' },
+    { name: 'Butter Tawa Pulav', price: '$9.99' },
+    { name: 'Muska Bun', price: '$3.99' }
+  ] },
+  { name: 'Chaat Corner', dishes: [
+    { name: 'Papdi Chaat', price: '$8.99' },
+    { name: 'Sev Puri', price: '$7.99' },
+    { name: 'Dahi Puri', price: '$8.99' },
+    { name: 'Bhel', price: '$7.99' },
+    { name: 'Bombay Sukha Bhel', price: '$7.99' }
+  ] },
+  { name: 'Pani Puri', dishes: [
+    { name: 'All You Can Eat', price: '$13.99' },
+    { name: '8 Piece Plate', price: '$6.99' }
+  ], pills: ['Phudina', 'Kaccha Aam', 'Garlic', 'Hajma Hajam'] },
+  { name: 'DIY Chaat Bar', dishes: [
+    { name: 'Build Your Own Chaat', note: 'Pick your base, chutneys & toppings', price: '$9.99' }
+  ] },
+  { name: 'Desi Walking Taco', dishes: [
+    { name: 'Truck Chips Included', note: 'Chips + your choice of veggies', price: '$8.99' },
+    { name: 'BYO Chips (We Load It)', price: '$5.99' }
+  ] },
+  { name: 'Dessert', dishes: [
+    { name: 'Malai Tres Leches', price: '$8.99' }
+  ] },
+  { name: 'Beverages', dishes: [
+    { name: 'Kadak Masala Chai', price: '$2.99' },
+    { name: 'Cold Coffee', note: '+Bournvita (Coffee Vita) $1.00 · +Ice Cream $2.00', price: '$4.99' },
+    { name: 'Masala Soda', price: '$2.99' }
+  ] }
 ];
 
 let activeIndex = 0;
@@ -112,7 +149,17 @@ function renderMenuDetail() {
   cat.dishes.forEach((dish) => {
     const row = document.createElement('div');
     row.className = 'dish-row';
-    row.innerHTML = '<span class="veg"><span></span></span>';
+    row.style.display = 'flex';
+    row.style.alignItems = 'center';
+    row.style.justifyContent = 'space-between';
+    row.style.gap = '12px';
+
+    const left = document.createElement('div');
+    left.style.display = 'flex';
+    left.style.alignItems = 'flex-start';
+    left.style.gap = '10px';
+    left.innerHTML = '<span class="veg"><span></span></span>';
+
     const textWrap = document.createElement('div');
     const name = document.createElement('div');
     name.className = 'dish-name';
@@ -124,7 +171,19 @@ function renderMenuDetail() {
       note.textContent = dish.note;
       textWrap.appendChild(note);
     }
-    row.appendChild(textWrap);
+    left.appendChild(textWrap);
+    row.appendChild(left);
+
+    if (dish.price) {
+      const price = document.createElement('div');
+      price.className = 'dish-price';
+      price.textContent = dish.price;
+      price.style.fontWeight = '700';
+      price.style.whiteSpace = 'nowrap';
+      price.style.color = color;
+      row.appendChild(price);
+    }
+
     list.appendChild(row);
   });
   body.appendChild(list);
